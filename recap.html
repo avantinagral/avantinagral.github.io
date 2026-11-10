@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gigs: First Eight Weeks</title>
+<meta name="description" content="A recap of gig emails from the first gig in mid-September to November 10, 2026.">
+<style>
+  :root {
+    --bg: #faf8f5; --card: #ffffff; --text: #1f1d1a; --muted: #6b665f;
+    --border: #e8e3dc; --accent: #c2410c; --accent-soft: #fff1e8; --bar: #fdba74;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161513; --card: #201e1b; --text: #f2efea; --muted: #a39d94;
+      --border: #34302b; --accent: #fb923c; --accent-soft: #2c211a; --bar: #9a3412;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  a { color: var(--accent); }
+  .back { font-size: 14px; text-decoration: none; }
+  header { margin: 12px 0 28px; }
+  .eyebrow { font-size: 13px; letter-spacing: .08em; text-transform: uppercase;
+    color: var(--accent); font-weight: 600; margin: 0 0 6px; }
+  h1 { font-size: clamp(28px, 6vw, 40px); line-height: 1.15; margin: 0 0 14px; }
+  .overview { color: var(--muted); font-size: 17px; margin: 0; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px; margin: 22px 0 0; padding: 0; list-style: none; }
+  .stats li { background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 12px 14px; font-size: 14px; color: var(--muted); }
+  .stats strong { display: block; font-size: 24px; color: var(--text); line-height: 1.2; }
+  section { background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+    padding: 22px 22px 14px; margin-top: 18px; }
+  h2 { font-size: 19px; margin: 0 0 6px; display: flex; align-items: center; gap: 10px; }
+  h2 .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); flex: none; }
+  .sub { color: var(--muted); font-size: 14px; margin: 0 0 14px; }
+  ul.items { margin: 0; padding: 0; list-style: none; }
+  ul.items li { padding: 12px 0; border-top: 1px solid var(--border); }
+  ul.items li:first-child { border-top: 0; padding-top: 0; }
+  .label { font-weight: 600; }
+  .tag { display: inline-block; font-size: 12px; font-weight: 600; color: var(--accent);
+    background: var(--accent-soft); border-radius: 999px; padding: 1px 9px; margin-left: 6px; vertical-align: 1px; }
+  /* volume bars */
+  .bars { display: grid; gap: 10px; }
+  .bar-row { display: grid; grid-template-columns: minmax(0, 1fr) 52px; gap: 10px; align-items: center; font-size: 14px; }
+  .bar-row .name { grid-column: 1 / -1; color: var(--muted); margin-bottom: -6px; }
+  .bar-track { background: var(--accent-soft); border-radius: 6px; height: 14px; overflow: hidden; }
+  .bar-fill { background: var(--bar); height: 100%; border-radius: 6px; }
+  .bar-row .n { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
+  /* table */
+  .table-wrap { overflow-x: auto; margin: 0 -4px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 520px; }
+  th, td { text-align: left; padding: 10px 6px; border-top: 1px solid var(--border); vertical-align: top; }
+  th { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); border-top: 0; }
+  td.when { white-space: nowrap; color: var(--muted); }
+  /* timeline */
+  ol.timeline { list-style: none; margin: 0; padding: 0 0 0 18px; border-left: 2px solid var(--border); }
+  ol.timeline li { position: relative; padding: 0 0 16px 14px; }
+  ol.timeline li::before { content: ""; position: absolute; left: -25px; top: 7px; width: 12px; height: 12px;
+    border-radius: 50%; background: var(--card); border: 2px solid var(--accent); }
+  ol.timeline .d { font-size: 13px; font-weight: 600; color: var(--accent); display: block; }
+  .note { font-size: 13px; color: var(--muted); margin: 10px 0 0; }
+  footer { color: var(--muted); font-size: 13px; text-align: center; margin-top: 32px; }
+  @media (max-width: 480px) { section { padding: 18px 16px 10px; border-radius: 14px; } }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="./">← Today's summary</a>
+  <header>
+    <p class="eyebrow">Gigs recap · Sep 15 – Nov 10, 2026</p>
+    <h1>The first eight weeks of gigs</h1>
+    <p class="overview">
+      Gigs started on September 15 with one AI video editing role for AutoGram. Eight weeks later,
+      about 1,400 gig emails have gone out across more than a dozen roles, matches have reached
+      seven clients, and the first fully curated search, for Verona, is in final rounds. The biggest
+      shift came on October 28, when applying moved from forms into the bb.bio dashboard and outreach
+      jumped from tens of emails a week to hundreds a day.
+    </p>
+    <ul class="stats">
+      <li><strong>~1,400</strong>gig emails sent</li>
+      <li><strong>608</strong>personal invites to creatives</li>
+      <li><strong>388</strong>interested creatives sent to apply</li>
+      <li><strong>10</strong>match rounds to 7 clients</li>
+      <li><strong>1</strong>curated search (2 roles)</li>
+    </ul>
+  </header>
+
+  <section>
+    <h2><span class="dot"></span>How many emails have gone out</h2>
+    <p class="sub">Every gig email since the first gig, grouped by type. Each is a one-to-one email.</p>
+    <div class="bars">
+      <div class="bar-row"><span class="name">Personal invites from bb.bio profiles (Oct 28)</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><span class="n">608</span></div>
+      <div class="bar-row"><span class="name">"How to apply" replies to interested creatives (Oct 28 – Nov 10)</span><div class="bar-track"><div class="bar-fill" style="width:64%"></div></div><span class="n">388</span></div>
+      <div class="bar-row"><span class="name">Follow-ups to Instagram commenters (Nov 6)</span><div class="bar-track"><div class="bar-fill" style="width:51%"></div></div><span class="n">310</span></div>
+      <div class="bar-row"><span class="name">Gig invites and deadline reminders, Sep 15 – Oct 22</span><div class="bar-track"><div class="bar-fill" style="width:13%"></div></div><span class="n">78</span></div>
+      <div class="bar-row"><span class="name">Match emails to clients</span><div class="bar-track"><div class="bar-fill" style="width:2%"></div></div><span class="n">12</span></div>
+    </div>
+    <p class="note">The 608 invites split into 271 single-gig emails and 337 "a few gigs" emails. The 78 early emails cover the AutoGram, Superliving and musician videography gigs, including deadline countdowns.</p>
+  </section>
+
+  <section>
+    <h2><span class="dot"></span>How many people are responding</h2>
+    <ul class="items">
+      <li><span class="label">Creatives: interest is high, email replies are low.</span> 388 creatives raised their hand for gigs and were sent the new "apply in your dashboard" steps, and 310 commented on Instagram asking about gigs. Direct email replies to the invites were about 28 out of ~920, roughly 3%. That's expected, because the invites point people to apply in the dashboard, not to reply.</li>
+      <li><span class="label">What the replies said.</span> Most were "thanks, I'll check it out" or "applied". About a third asked a real question (see below), and a handful declined, usually over location or timing.</li>
+      <li><span class="label">Clients: fast, engaged.</span> AutoGram, Superliving and Evensong each clicked through the matched profiles within minutes to hours of receiving them. AutoGram came back to its matches two weeks and a month later. Verona replied the same day at nearly every step.</li>
+      <li><span class="label">Applications themselves happen in the dashboard,</span> so the number of people who actually hit "apply" isn't visible in email. The dashboard is the place to check that count.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="dot"></span>What people are asking</h2>
+    <ul class="items">
+      <li><span class="label">"Can I do this remotely, or from where I live?"</span> <span class="tag">Most common</span> On-site roles drew questions from people in other cities and other countries, including Nigeria and South Africa. Some preferred to work in their hometown. The usual answer was to point them to the remote video-editing gig.</li>
+      <li><span class="label">"How does this work?"</span> People asked to have the steps explained and where exactly to apply, which is what the "one quick step" and dashboard emails now spell out.</li>
+      <li><span class="label">"Am I experienced enough?"</span> Questions like "can I start as an intern first?" and "I haven't worked at scale, should I still apply?". The answer: yes, the company looks at your work and how you think.</li>
+      <li><span class="label">"What's the role and the pay?"</span> People asked for the brief. The Founding Marketing Lead brief (full-time, Mumbai, founding team) included the salary range.</li>
+      <li><span class="label">"Can my company post a gig?"</span> Some people asked how to list their own openings and were pointed to the hiring form on the website.</li>
+      <li><span class="label">Timing and fit.</span> A few missed a deadline while on a shoot, and one passed on a fixed-budget gig because the cost and time didn't work for them.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="dot"></span>What the gigs are</h2>
+    <p class="sub">Every gig that has gone out over email so far, roughly in order.</p>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Gig</th><th>Client</th><th>Where / pay</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>AI Video Editor</td><td>AutoGram</td><td>Remote</td><td>Matches sent Sep 20 &amp; 24 <span class="tag">First gig</span></td></tr>
+        <tr><td>Influencer Marketing Manager</td><td>Superliving</td><td>Bangalore</td><td>Matches sent Oct 12</td></tr>
+        <tr><td>Videographer for a musician</td><td>An independent musician</td><td>Mumbai · ₹20k/month</td><td>Matches sent Oct 22</td></tr>
+        <tr><td>Real Estate Videographer</td><td>A real estate client</td><td></td><td>Matches sent Nov 3</td></tr>
+        <tr><td>Brand &amp; Marketing Head</td><td>Evensong</td><td></td><td>Matches sent Nov 3</td></tr>
+        <tr><td>Social Media Manager</td><td>Verona</td><td>Delhi</td><td>Curated: candidates in final rounds</td></tr>
+        <tr><td>Creative Director / Head of Brand &amp; Marketing</td><td>Verona</td><td>Delhi NCR</td><td>Curated: assignments due this week</td></tr>
+        <tr><td>Creative Strategy Director</td><td>Humpy Farms</td><td>Pune · full-time</td><td>17 matches sent Nov 9</td></tr>
+        <tr><td>Videographer &amp; Video Editor</td><td>Humpy Farms</td><td>Pune · full-time</td><td>11 matches sent Nov 9</td></tr>
+        <tr><td>Graphic Designer</td><td>Humpy Farms</td><td>Pune · full-time</td><td>8 matches sent Nov 9</td></tr>
+        <tr><td>Long-form Video Editor</td><td>A creator's interview channel</td><td>Remote · freelance</td><td>11 matches sent Nov 9</td></tr>
+        <tr><td>Founding Marketing Lead</td><td>A self-care &amp; wellness brand</td><td>Mumbai · ₹18–20 LPA</td><td>Open</td></tr>
+        <tr><td>Content Creator, love &amp; relationships</td><td>A relationships IP</td><td>Remote · part-time</td><td>Open</td></tr>
+        <tr><td>Podcast Intern</td><td>In-house podcast</td><td>Mumbai · internship</td><td>Shortlist shared Nov 9</td></tr>
+        <tr><td>Video Creator</td><td></td><td>Bengaluru</td><td>Open</td></tr>
+        <tr><td>Digital Media Specialist</td><td></td><td></td><td>Open</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="dot"></span>Curated search: Verona</h2>
+    <p class="sub">The first fully curated search. The team screens and interviews every candidate before sending a short, ranked list. Two roles: Social Media Manager, and Creative Director / Head of Brand &amp; Marketing.</p>
+    <ol class="timeline">
+      <li><span class="d">Oct 13 · Kickoff</span>Agreed on scope and terms for both roles, with creator hiring to follow once these close. Screening starts.</li>
+      <li><span class="d">Oct 19 · Day 6</span>Update to the client: a vetted set is coming by end of week, plus one question to sharpen the brief.</li>
+      <li><span class="d">Oct 22 · Day 9</span>Social media candidates interviewed. The brand lead role needs more time to find the right person.</li>
+      <li><span class="d">Oct 26 · Day 13</span><strong>Social Media Manager shortlist:</strong> 4 interviewed candidates, ranked. The client opened it 7 times that evening and picked 3 to meet.</li>
+      <li><span class="d">Oct 27 · Day 14</span>Separate email intros to all 3.</li>
+      <li><span class="d">Oct 28–29</span>The client checked on timing for the Creative Director role. Reply: every candidate is being interviewed personally first. The client's first social media call went well, and an office visit was booked.</li>
+      <li><span class="d">Nov 3 · Day 21</span><strong>Creative Director shortlist:</strong> 5 candidates. The client said they were "quite promising" and asked to meet all 5.</li>
+      <li><span class="d">Nov 4 · Day 22</span>Intros to all 5. One social media candidate in the office after submitting an assignment.</li>
+      <li><span class="d">Nov 6–8</span>Creative Director candidates receive the brand and growth assignment, and the first in-office meeting is set for Thursday.</li>
+      <li><span class="d">Nov 11–13 · Next</span>Assignments due mid-week, with founder follow-ups Thursday and Friday.</li>
+    </ol>
+    <ul class="items" style="margin-top:6px">
+      <li><span class="label">Cadence so far:</span> a touchpoint with the client every 2–4 days, intros out within 24 hours of the client's pick, and the client replying the same day almost every time. From kickoff, the first shortlist took 13 days and the harder senior role took 21 days. Every candidate on both shortlists got an intro (3 of 4, then 5 of 5).</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="dot"></span>How it evolved, week by week</h2>
+    <ol class="timeline">
+      <li><span class="d">Week of Sep 14</span>First gig, AutoGram's AI Video Editor: 11 hand-written invites, matches on Sep 20 and 24.</li>
+      <li><span class="d">Sep 28 – Oct 12</span>Superliving's Influencer Marketing gig in Bangalore: applicant next steps, "last day to apply" reminders, and matches on Oct 12.</li>
+      <li><span class="d">Oct 13</span>Verona curated search begins.</li>
+      <li><span class="d">Oct 20–22</span>Musician videography gig in Mumbai: 48 emails in three days, including a deadline countdown, and matches on Oct 22. The real estate videography gig also opens.</li>
+      <li><span class="d">Oct 28 · The big day</span>608 personal invites go out in one morning for the Humpy Farms roles, the Founding Marketing Lead, the Podcast Intern and the relationships content creator. Applying moves into the bb.bio dashboard.</li>
+      <li><span class="d">Oct 28 – Nov 10</span>388 interested creatives get the new dashboard steps, a steady stream every day.</li>
+      <li><span class="d">Nov 3</span>Matches to Evensong and the real estate client. The Verona Creative Director shortlist goes out.</li>
+      <li><span class="d">Nov 6</span>310 follow-ups to people who commented on Instagram, with six gigs closing Nov 9.</li>
+      <li><span class="d">Nov 9</span>36 matches across three Humpy Farms roles, plus 11 for the long-form editor.</li>
+    </ol>
+  </section>
+
+  <footer>Built from the sent and received gig emails since Sep 15, 2026. Individual people are never named, and internal company matters are left out on purpose.</footer>
+</main>
+</body>
+</html>
